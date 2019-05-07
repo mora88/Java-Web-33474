@@ -12,10 +12,32 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!  </h1>
-        <% 
-           int num= 9*2;
-           out.println(num);
-        %>
+        
+        <form id="data" name="data" action="signIn">
+            <table>
+                <tr>
+                    <td><label>Login</label></td>
+                    <td><imput type="text" id="username" name="username">
+                    </td>
+                </tr>
+                 <tr>
+                    <td><label>Password</label></td>
+                    <td><imput type="pasword" id="pasword" name="pasword">
+                    </td>
+                </tr>  
+                
+                <tr>
+                   <td><imput type="submit"> </td>
+                   <td><imput type="reset"> </td>
+                </tr>
+                
+                
+                
+             </table>
+
+            
+            
+        </form>
+        
     </body>
 </html>
