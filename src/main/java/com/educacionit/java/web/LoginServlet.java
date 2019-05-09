@@ -16,15 +16,15 @@ import javax.servlet.http.HttpSession;
 public class LoginServlet extends HttpServlet {
 
     @Override
-    protected void doGet (HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost (HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String u = request.getParameter("username");
-        String p = request.getParameter("pasword");
+        String p = request.getParameter("password");
         
         if ( u.equals("admin")&& p.equals("admin")){
             
             HttpSession session = request.getSession();
-            session.setAttribute("username","system" );
+            session.setAttribute("username","System Administrator" );
             
             response.sendRedirect("home.jsp");
         } else {
